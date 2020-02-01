@@ -13,17 +13,16 @@ code {
 }
 
 
-.home .post img{
-  position: absolute;
-  top: 20px;
-  left: -35px;
-  opacity: 0.6;
+body, html {
+  height: 100%;
+  background-color: mintcream;
 }
 
-.home .post{
-  overflow: hidden;
-  padding-left: 80px;
+.bg {
+  /* The image used */
+  background-color:mintcream
 }
+
 
 h6 {
   text-align: center;
@@ -31,9 +30,15 @@ h6 {
   padding-top: 2%;
 }
 
-.bck-grad {
-  background: #7b4397;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.home .recipe {
+  top: 20px;
+  padding-left:10px ;
+opacity: 0.6;
+}
+
+.header-bk {
+  background: #43977e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2724dc, #977343);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2724dc, #977343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
 }

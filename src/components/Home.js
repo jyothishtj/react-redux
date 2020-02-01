@@ -1,7 +1,6 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import Pasta from '../spaghetti.png'
-import { connect } from 'react-redux'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 class Home extends Component {
   render(){
@@ -10,10 +9,9 @@ class Home extends Component {
       recipes.map(recipe => {
         return (
           <div className="post card" key={recipe.id}>
-            <img src={Pasta} alt="A Pasta Plate" />
-            <div className="card-content">
+                        <div className="card.body">
               <Link to={'/' + recipe.id}>
-                <span className="card-title red-text">{recipe.title}</span>
+                <span className="card.title .primary">{recipe.title}</span>
               </Link>
               <p>{recipe.body}</p>
             </div>
@@ -21,15 +19,14 @@ class Home extends Component {
         )
       })
     ) : (
-      <div className="center">No recipes available</div>
+      <div className="center">No Recipeies Available to Show</div>
     );
 
     return (
       <div>
         <div className="container home">
-          <h4 className="center">Available Recipes</h4>
-          <h6>When it comes to comfort food, you can never go wrong with a heaping plate of Pasta</h6>
-          {recipeList}
+          <h4 className="center">Recipe List</h4>
+                    {recipeList}
         </div>
       </div>
     )
@@ -38,7 +35,7 @@ class Home extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    posts: state.posts
+    recipes: state.recipes
   }
 }
 

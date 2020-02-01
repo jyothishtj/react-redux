@@ -2,20 +2,15 @@ import React from 'react';
 // import {Link, NavLink} from 'react-router-dom';
 import {NavLink, withRouter} from 'react-router-dom'; // add active class to anchor tag
 const Navbar = (props) => {
-    console.log(props, "these are navbar props");
-    return (
-             <nav className="nav-wrapper bck-grad">
-           <div className="container">
-               <a href="/" className="brand-logo">Pasta Time</a>
-               <ul className="right">
-                   <li><NavLink to="/" >Home</NavLink></li>
-                    <li><NavLink to="/About">About</NavLink></li>
-                    <li><NavLink to="/Contact" >Contact</NavLink></li>
+        return (
+        <nav className="navbar navbar-expand-lg navbar-light" role="navigation">
+                        <a href="/" className="brand-logo">Chicken Recipes</a>
+               <ul className="nav nav-tabs ml-auto">
+               <li className="nav-item"><NavLink className="nav-link" to="/" exact activeStyle={{ color:'green' }} >Home</NavLink></li>
+               <li className="nav-item"><NavLink className="nav-link" to="/About" activeStyle={{ color:'green' }}>About</NavLink></li>
+               <li className="nav-item"><NavLink className="nav-link" to="/Contact" activeStyle={{ color:'green' }}>Contact Us</NavLink></li>
                </ul>
-           </div>
-       </nav>
-
-
+                  </nav>
     )
 }
-export default Navbar;
+export default withRouter(Navbar);

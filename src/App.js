@@ -11,10 +11,9 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar />
-        {/* react route adds props property which has .history to method using which you can programmatically redirect to other component */}
-        {/* solution: withRouter */}
+        {/* Switch is getting added for loading only one compoent  */}
         <Switch> 
-          {/* load onlly one compoent  */}
+          
         <Route exact path='/' component={Home}/>
         <Route path='/About' component={About}/>
         <Route path='/Contact' component={Contact}/>
