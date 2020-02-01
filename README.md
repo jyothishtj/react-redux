@@ -2,6 +2,11 @@ A simple React Redux practice project with Routing, State Prop mapping, Redux an
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+##ScreenShot of the App
+
+https://github.com/jyothishtj/react-redux/issues/1#issue-558497775
+
+
 ## Available Scripts
 
 In the project directory, you can run:
